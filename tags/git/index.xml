@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>konpig</title>
-    <link>/</link>
-    <description>Recent content on konpig</description>
+    <title>git on konpig</title>
+    <link>/tags/git/</link>
+    <description>Recent content in git on konpig</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Jul 2020 20:50:39 +0900</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,17 +24,6 @@
 Homebrew가 설치되어있지 않다면 먼저 터미널에서 아래 스크립트를 실행하여 Homebrew를 설치한다.
 여기에서 Homebrew에 대한 자세한 내용을 확인할 수 있다.
 /bin/bash -c &amp;#34;$(curl -fsSl https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; Homebrew가 설치되었다면 터미널에 아래 스크립트를 실행하여 hugo를 설치한다.</description>
-    </item>
-    
-    <item>
-      <title>Blogs</title>
-      <link>/posts/blogs/</link>
-      <pubDate>Sun, 12 Jul 2020 22:50:06 +0900</pubDate>
-      
-      <guid>/posts/blogs/</guid>
-      <description>This is a new blog page I can write in markdown over here
-Index Links to blogs Links to blogs Links to blogs Links to blogs Links to blogs Links to blogs
- Markdown Is Fun  </description>
     </item>
     
   </channel>

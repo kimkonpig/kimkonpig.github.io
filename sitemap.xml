@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2020-07-13T20:50:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/creating-a-new-hugo-blog/</loc>
+    <lastmod>2020-07-13T20:50:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/git/</loc>
+    <lastmod>2020-07-13T20:50:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo/</loc>
     <lastmod>2020-07-13T20:50:39+09:00</lastmod>
   </url>
   
@@ -18,16 +33,22 @@
   </url>
   
   <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-13T20:50:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/themes/</loc>
+    <lastmod>2020-07-13T20:50:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/blogs/</loc>
     <lastmod>2020-07-12T22:50:06+09:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
   </url>
   
 </urlset>

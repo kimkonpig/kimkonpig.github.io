@@ -17,7 +17,7 @@
       <pubDate>Mon, 13 Jul 2020 20:50:39 +0900</pubDate>
       
       <guid>/posts/creating-a-new-hugo-blog/</guid>
-      <description>Creating A New Hugo Blog MacOS에 hugo를 설치해 git 연동 블로그를 만들었다.
+      <description>MacOS에 hugo를 설치해 git 연동 블로그를 만들었다.
 여러가지 개념을 제대로 익히지 않은 채 만들기 시작해서 설치와 제거를 여러번 반복했다.
 이런 시행착오가 다시는 없길 바라며 첫 포스팅으로 MacOS hugo 블로그 만드는 과정을 정리해보려고 한다.
  1. Install Homebrew를 사용하여 hugo를 설치한다.
