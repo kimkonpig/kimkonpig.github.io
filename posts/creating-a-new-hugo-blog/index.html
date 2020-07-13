@@ -7,20 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Kim Youlim" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+    <link rel="stylesheet" href="/css/main.min.b02e40673393ce54f893538481019eac14bbf89e945224baf8d87967c7f9e509.css" />
 
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating a New Hugo Blog"/>
-<meta name="twitter:description" content="Creating A New Hugo Blog Mac OS에 hugo를 설치해 git 연동 블로그를 만들었다. 여러가지 개념을 제대로 익히지 않은 채 만들기 시작해서 설치와 제거를 여러번 반복했다. 이런 시행착오가 다시는 없길 바라며 첫 포스팅으로 Mac OS에 hugo 블로그 만드는 과정을 정리해보려고 한다.
-1. Installation Homebrew를 사용하여 hugo를 설치한다.
-Homebrew가 설치되어있지 않으면 먼저 터미널에서 아래 스크립트를 실행하여 Homebrew를 설치한다. 여기에서 Homebrew에 대한 자세한 내용을 확인할 수 있다.
+<meta name="twitter:description" content="Creating A New Hugo Blog MacOS에 hugo를 설치해 git 연동 블로그를 만들었다.
+여러가지 개념을 제대로 익히지 않은 채 만들기 시작해서 설치와 제거를 여러번 반복했다.
+이런 시행착오가 다시는 없길 바라며 첫 포스팅으로 MacOS hugo 블로그 만드는 과정을 정리해보려고 한다.
+ 1. Install Homebrew를 사용하여 hugo를 설치한다.
+Homebrew가 설치되어있지 않다면 먼저 터미널에서 아래 스크립트를 실행하여 Homebrew를 설치한다.
+여기에서 Homebrew에 대한 자세한 내용을 확인할 수 있다.
 /bin/bash -c &#34;$(curl -fsSl https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&#34; Homebrew가 설치되었다면 터미널에 아래 스크립트를 실행하여 hugo를 설치한다."/>
 
     <meta property="og:title" content="Creating a New Hugo Blog" />
-<meta property="og:description" content="Creating A New Hugo Blog Mac OS에 hugo를 설치해 git 연동 블로그를 만들었다. 여러가지 개념을 제대로 익히지 않은 채 만들기 시작해서 설치와 제거를 여러번 반복했다. 이런 시행착오가 다시는 없길 바라며 첫 포스팅으로 Mac OS에 hugo 블로그 만드는 과정을 정리해보려고 한다.
-1. Installation Homebrew를 사용하여 hugo를 설치한다.
-Homebrew가 설치되어있지 않으면 먼저 터미널에서 아래 스크립트를 실행하여 Homebrew를 설치한다. 여기에서 Homebrew에 대한 자세한 내용을 확인할 수 있다.
+<meta property="og:description" content="Creating A New Hugo Blog MacOS에 hugo를 설치해 git 연동 블로그를 만들었다.
+여러가지 개념을 제대로 익히지 않은 채 만들기 시작해서 설치와 제거를 여러번 반복했다.
+이런 시행착오가 다시는 없길 바라며 첫 포스팅으로 MacOS hugo 블로그 만드는 과정을 정리해보려고 한다.
+ 1. Install Homebrew를 사용하여 hugo를 설치한다.
+Homebrew가 설치되어있지 않다면 먼저 터미널에서 아래 스크립트를 실행하여 Homebrew를 설치한다.
+여기에서 Homebrew에 대한 자세한 내용을 확인할 수 있다.
 /bin/bash -c &#34;$(curl -fsSl https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&#34; Homebrew가 설치되었다면 터미널에 아래 스크립트를 실행하여 hugo를 설치한다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/creating-a-new-hugo-blog/" />
@@ -66,29 +72,39 @@ Homebrew가 설치되어있지 않으면 먼저 터미널에서 아래 스크립
     </header>
     <div class="post-content">
       <h1 id="creating-a-new-hugo-blog">Creating A New Hugo Blog</h1>
-<p>Mac OS에 hugo를 설치해 git 연동 블로그를 만들었다. 여러가지 개념을 제대로 익히지 않은 채 만들기 시작해서 설치와 제거를 여러번 반복했다. 이런 시행착오가 다시는 없길 바라며 첫 포스팅으로 <strong>Mac OS에 hugo 블로그 만드는 과정</strong>을 정리해보려고 한다.</p>
-<h2 id="1-installation">1. Installation</h2>
+<p>MacOS에 hugo를 설치해 git 연동 블로그를 만들었다.</p>
+<p>여러가지 개념을 제대로 익히지 않은 채 만들기 시작해서 설치와 제거를 여러번 반복했다.</p>
+<p>이런 시행착오가 다시는 없길 바라며 첫 포스팅으로 <strong>MacOS hugo 블로그 만드는 과정</strong>을 정리해보려고 한다.</p>
+<hr>
+<h2 id="1-install">1. Install</h2>
 <p>Homebrew를 사용하여 hugo를 설치한다.</p>
-<p>Homebrew가 설치되어있지 않으면 먼저 터미널에서 아래 스크립트를 실행하여 Homebrew를 설치한다. <a href="https://brew.sh/index_ko">여기</a>에서 Homebrew에 대한 자세한 내용을 확인할 수 있다.</p>
+<p>Homebrew가 설치되어있지 않다면 먼저 터미널에서 아래 스크립트를 실행하여 Homebrew를 설치한다.</p>
+<p><a href="https://brew.sh/index_ko">여기</a>에서 Homebrew에 대한 자세한 내용을 확인할 수 있다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/bin/bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSl https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><p>Homebrew가 설치되었다면 터미널에 아래 스크립트를 실행하여 hugo를 설치한다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install hugo
 </code></pre></div><p>hugo version 확인을 통해 설치가 잘 되었음을 확인할 수 있다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo version
 </code></pre></div><h2 id="2-create-new-site">2. Create New Site</h2>
-<p>hugo 블로그를 위한 New Site(새로운 폴더)를 만들어야 한다. 원하는 경로로 이동하여 hugo 명령어를 통해 new site를 만든다. (아래 스크립트 실행시 &lsquo;hugo&rsquo;라는 이름의 site가 생성된다. 원하는 이름으로 만들면 된다.)</p>
+<p>hugo 블로그를 위한 New Site(새로운 폴더)를 만들어야 한다.</p>
+<p>원하는 경로로 이동하여 hugo 명령어를 통해 new site를 만든다.</p>
+<p>(아래 스크립트 실행시 &lsquo;hugo&rsquo;라는 이름의 site가 생성된다. 원하는 이름으로 만들면 된다.)</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site hugo
 </code></pre></div><h2 id="3-set-theme">3. Set theme</h2>
-<p>hugo 에서 제공하는 여러가지 테마 중에 원하는 테마를 선택하여 내가 만들 블로그에 적용할 차례. <a href="https://themes.gohugo.io/">여기</a>에서 다양한 테마를 확인할 수 있다. 내가 선택한 테마는 <a href="https://themes.gohugo.io/hugo-theme-m10c/">m10c</a> 이다.</p>
+<p>hugo 에서 제공하는 여러가지 테마 중에 원하는 테마를 선택하여 내가 만들 블로그에 적용할 차례.</p>
+<p>에서 다양한 테마를 확인할 수 있다.</p>
+<p>내가 선택한 테마는 <a href="https://themes.gohugo.io/hugo-theme-m10c/">m10c</a> 이다.</p>
 <p><img src="/img/20200713-01.JPG" alt="20200713-01"></p>
-<p><a href="https://github.com/vaga/hugo-theme-m10c">Download</a> 버튼을 클릭해 github로 이동하여 m10c 테마 git 주소를 복사한 후, 새로 만들었던 사이트(여기선 hugo 폴더)로 이동해 git clone 명령어를 사용하여 테마를 받아온다.</p>
+<p><a href="https://github.com/vaga/hugo-theme-m10c">Download</a> 버튼을 클릭해 github로 이동하여 m10c 테마 git 주소를 복사한 후,</p>
+<p>새로 만들었던 사이트(여기선 hugo 폴더)로 이동해 git clone 명령어를 사용하여 테마를 받아온다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd hugo
 git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
-</code></pre></div><p>clone이 완료되면 /themes/hugo-theme-m10c 폴더가 생성되었는지 확인한다. 그 다음 config.toml 파일에 테마 이름을 추가해야한다.</p>
+</code></pre></div><p>clone이 완료되면 /themes/hugo-theme-m10c 폴더가 생성되었는지 확인한다.</p>
+<p>그 다음 config.toml 파일에 테마 이름을 추가해야한다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#39;theme = &#34;m10c&#34;&#39;</span> &gt;&gt; config.tmol
 </code></pre></div><p>echo 명령어로 파일을 열지 않고 한 줄 추가할 수 있고,</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">vi config.toml
-<span style="color:#75715e">## theme = &#34;m10c&#34; 추가</span>
+<span style="color:#75715e"># theme = &#34;m10c&#34; 추가</span>
 </code></pre></div><p>편집기로 파일을 열어 theme = &ldquo;m10c&rdquo; 를 작성할 수 있다.</p>
 <h2 id="4-run-server">4. Run Server</h2>
 <p>지금까지 한 내용들이 어떻게 반영되었는지 한 번 확인해보고 싶다면 아래 스크립트를 실행하여 먼저 서버를 구동시킨다.</p>
@@ -96,17 +112,20 @@ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
 </code></pre></div><p>서버가 올라가면 localhost:1313 을 입력하여 내가 만든 블로그를 확인할 수 있다.</p>
 <p><img src="/img/20200713-02.JPG" alt="20200713-01"></p>
 <h2 id="5-ready-for-deploying">5. Ready for Deploying</h2>
-<p>로컬이 아닌 username.github.io로 호스팅하기 위해서 github에 두 개의 repository를 생성한다. 컨텐츠 저장소와 최종 빌드 배포용 저장소를 만든다. 최종 빌드 저장소를 만들 때 username.github.io 형식에 맞춰 생성한다. (gitpage에서 제공하는 url 형식이기 때문이다.)</p>
+<p>로컬이 아닌 username.github.io로 호스팅하기 위해서 github에 두 개의 repository를 생성한다.</p>
+<p>컨텐츠 저장소와 최종 빌드 배포용 저장소를 만든다.</p>
+<p>최종 빌드 저장소를 만들 때 username.github.io 형식에 맞춰 생성한다.</p>
+<p>(gitpage에서 제공하는 url 형식이기 때문이다.)</p>
 <ul>
 <li>컨텐츠 저장소 ex) <a href="https://github.com/kimkonpig/hugo_contents">hugo_contents</a></li>
 <li>최종 빌드 저장소 ex) <a href="https://github.com/kimkonpig/kimkonpig.github.io">kimkonpig.github.io</a></li>
 </ul>
 <p>github에 두 개의 repository를 만든 후 remote와 submodule을 설정한다.</p>
-<p>####5-1. remote 설정</p>
-<pre><code class="language- sh" data-lang=" sh">cd hugo # 초기에 생성한 new site 폴더로 이동
+<h4 id="5-1-remote-설정">5-1. remote 설정</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd hugo <span style="color:#75715e">#초기에 생성한 new site 폴더로 이동</span>
 git init
 git remote add origin git@github.com:kimkonpig/hugo_contents
-</code></pre><h4 id="5-2-submodule-설정">5-2. submodule 설정</h4>
+</code></pre></div><h4 id="5-2-submodule-설정">5-2. submodule 설정</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git submodule add -b master git@github.com:kimkonpig/kimkonpig.github.io.git public
 </code></pre></div><p>설정 도중 permission denied 에러가 발생하면 <a href="https://docs.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys">이 링크</a>를 따라 순서대로 처리하면 된다.</p>
 <h2 id="6-deploy">6. Deploy</h2>
