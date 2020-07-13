@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Kim Youlim" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="/css/main.min.b02e40673393ce54f893538481019eac14bbf89e945224baf8d87967c7f9e509.css" />
+    <link rel="stylesheet" href="/css/main.min.46fd507052db079dca762527ba9ef4fdcc029ca50740567d13af76b0f1d38a08.css" />
 
     
     <meta name="twitter:card" content="summary"/>
@@ -122,7 +122,7 @@ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
 </ul>
 <p>github에 두 개의 repository를 만든 후 remote와 submodule을 설정한다.</p>
 <h4 id="5-1-remote-설정">5-1. remote 설정</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd hugo <span style="color:#75715e">#초기에 생성한 new site 폴더로 이동</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd hugo <span style="color:#75715e"># 초기에 생성한 new site 폴더로 이동</span>
 git init
 git remote add origin git@github.com:kimkonpig/hugo_contents
 </code></pre></div><h4 id="5-2-submodule-설정">5-2. submodule 설정</h4>
@@ -144,7 +144,14 @@ git push origin master
 </code></pre></div><p>git push가 정상적으로 되었다면 username.github.io로 접속하여 최종 배포된 페이지를 확인할 수 있다.</p>
 <p><img src="/img/20200713-03.JPG" alt="20200713-01"></p>
 <p>아직 아무것도 없다. 이 포스팅을 시작으로 하나하나 채워나가야겠다.</p>
+<h2 id="7-update">7. Update</h2>
+<p>파일 추가 및 수정 후 rebuild 할 때 hugo server -D 또는 hugo -D 가 실행이 잘 되지 않는다면 아래 명령어로 빌드한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># hugo server -D 대신</span>
+hugo server -t m10c <span style="color:#75715e"># 테마이름 입력</span>
 
+<span style="color:#75715e"># hugo -D 대신</span>
+hugo -t m10c <span style="color:#75715e"># 테마이름 입력</span>
+</code></pre></div>
     </div>
     <div class="post-footer">
       
