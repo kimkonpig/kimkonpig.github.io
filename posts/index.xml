@@ -6,10 +6,26 @@
     <description>Recent content in Posts on KONPIG BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jul 2020 20:50:39 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2020 23:35:15 +0900</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adding Disqus Plug In</title>
+      <link>/posts/adding-disqus-plug-in/</link>
+      <pubDate>Mon, 13 Jul 2020 23:35:15 +0900</pubDate>
+      
+      <guid>/posts/adding-disqus-plug-in/</guid>
+      <description>어느정도 블로그 셋팅을 마무리하고 보니 어딘가 허전함이 느껴졌다.
+자고로 블로그라 하면 소통 기능이 필요하지 않겠는가?
+Disqus에서 제공하는 플러그인을 사용해 댓글 기능을 추가해보았다.
+ 1. 회원가입 먼저 disqus.com 에 회원가입을 한다. 페이스북, 트위터, 구글 소셜 가입/로그인도 가능하다.
+2. 등록하기 메인 화면에서 GET STARTED 버튼을 클릭한다.
+다음 화면에서 두번째 선택지(I want to install Disqus on my site)를 클릭한다.
+필요한 정보를 입력하고 Create Site 버튼 클릭한다.
+Website Name은 shortname 으로 사용할 원하는 이름을 적으면 된다.</description>
+    </item>
     
     <item>
       <title>Creating a New Hugo Blog</title>
