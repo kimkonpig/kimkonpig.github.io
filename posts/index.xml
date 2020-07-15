@@ -6,10 +6,24 @@
     <description>Recent content in Posts on KONPIG BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Collection Framework</title>
+      <link>/posts/collection-framwork/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/collection-framwork/</guid>
+      <description>Java Collection은 데이터 집합의 저장 및 조작을 위한 구조를 제공하는 프레임워크다.
+다시 쉽게 말해, Java Collection Framework는 다양한 인터페이스와 클래스를 제공하는 FW다. (참고)
+  Collection ? 오브젝트의 단일 유닛(=그룹)을 나타낸다.
+  Framework ? 이미 만들어진 구조를 제공한다. 클래스와 인터페이스의 set을 나타낸다.
+  인터페이스 : Set, List, Queue, Deque, Map
+ List와 Set은 Collection 인터페이스를 상속받지만, 구조상의 차이로 Map은 별도로 정의한다.    클래스 : ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet, HashTable, HashMap, SortedMap, TreeMap</description>
+    </item>
     
     <item>
       <title>Big-O</title>
