@@ -6,10 +6,26 @@
     <description>Recent content in Posts on KONPIG BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2020 00:44:46 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java ArrayList</title>
+      <link>/posts/arraylist/</link>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/arraylist/</guid>
+      <description>Java ArrayList 클래스는 요소를 저장하기 위해 동적배열을 사용한다. 배열과 같지만 크기 제한이 없다.
+메소드를 사용해 언제든 요소를 추가/제거할 수 있다. C++의 Vector와 비슷하다.
+ArrayList는 List 인터페이스를 구현하기 때문에 List 인터페이스의 모든 메소드를 사용할 수 있다.
+ArrayList는 중복 요소를 가질 수 있으며 삽입 순서를 유지한다. 참고
+주요 특징   ArrayList 클래스는 중복 요소를 가질 수 있다.
+  ArrayList 클래스는 삽입 순서를 유지한다.
+  ArrayList 클래스는 비동기적(non-synchronized)이다.
+  ArrayList 클래스는 index 기반으로 랜덤 접근이 가능하다.</description>
+    </item>
     
     <item>
       <title>Java Collection Framework</title>
