@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Java LinkedList // KONPIG BLOG</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.73.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Kim Youlim" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.0a0ed68d1905d89b9b4a6505b55ff021db9334619ab6718a424276bf76524825.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java LinkedList"/>
+<meta name="twitter:description" content="Java LinkedList 클래스는 요소를 조작하기 위해 이중 연결 리스트를 사용한다.
+AbstractSequentialList 클래스를 상속받으며 List와 Deque 인터페이스를 구현한다.
+참고
+주요 특징   LinkedList 클래스는 중복 요소를 가질 수 있다.
+  LinkedList 클래스는 삽입 순서를 유지한다.
+  LinkedList 클래스는 비동기적(non-synchronized)이다.
+  LinkedList 클래스는 삽입/제거 시 요소의 이동이 없기 때문에 비교적 빠르다.
+  LinkedList 클래스는 list, stack, queue로 사용할 수 있다.
+  이중 연결 리스트(Doubly Linked List) 일반적인 연결 리스트(Linked List)의 노드들은 다음 노드를 가리키는 포인터(next)만 가지고 있어 단방향으로만 탐색이 가능하다."/>
+
+    <meta property="og:title" content="Java LinkedList" />
+<meta property="og:description" content="Java LinkedList 클래스는 요소를 조작하기 위해 이중 연결 리스트를 사용한다.
+AbstractSequentialList 클래스를 상속받으며 List와 Deque 인터페이스를 구현한다.
+참고
+주요 특징   LinkedList 클래스는 중복 요소를 가질 수 있다.
+  LinkedList 클래스는 삽입 순서를 유지한다.
+  LinkedList 클래스는 비동기적(non-synchronized)이다.
+  LinkedList 클래스는 삽입/제거 시 요소의 이동이 없기 때문에 비교적 빠르다.
+  LinkedList 클래스는 list, stack, queue로 사용할 수 있다.
+  이중 연결 리스트(Doubly Linked List) 일반적인 연결 리스트(Linked List)의 노드들은 다음 노드를 가리키는 포인터(next)만 가지고 있어 단방향으로만 탐색이 가능하다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/linkedlist/" />
+<meta property="article:published_time" content="2020-07-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-20T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Kim Youlim" /></a>
+      <h1>KONPIG BLOG</h1>
+      <p>Welcome</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/kimkonpig" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Java LinkedList</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          July 20, 2020
+        </div>
+        </div>
+    </header>
+    <div class="post-content">
+      <h1 id="---linkedlist---"><!-- raw HTML omitted --></h1>
+<p>Java LinkedList 클래스는 요소를 조작하기 위해 <strong>이중 연결 리스트</strong>를 사용한다.</p>
+<p>AbstractSequentialList 클래스를 상속받으며 List와 Deque 인터페이스를 구현한다.</p>
+<p><a href="https://www.javatpoint.com/java-linkedlist">참고</a></p>
+<p><img src="/img/20200720-01.jpg" alt="LinkedList"></p>
+<h2 id="주요-특징">주요 특징</h2>
+<ul>
+<li>
+<p>LinkedList 클래스는 중복 요소를 가질 수 있다.</p>
+</li>
+<li>
+<p>LinkedList 클래스는 삽입 순서를 유지한다.</p>
+</li>
+<li>
+<p>LinkedList 클래스는 비동기적(non-synchronized)이다.</p>
+</li>
+<li>
+<p>LinkedList 클래스는 삽입/제거 시 요소의 이동이 없기 때문에 비교적 빠르다.</p>
+</li>
+<li>
+<p>LinkedList 클래스는 list, stack, queue로 사용할 수 있다.</p>
+</li>
+</ul>
+<h2 id="이중-연결-리스트doubly-linked-list">이중 연결 리스트(Doubly Linked List)</h2>
+<p>일반적인 연결 리스트(Linked List)의 노드들은 다음 노드를 가리키는 포인터(next)만 가지고 있어 단방향으로만 탐색이 가능하다.</p>
+<p>그러나 이중 연결 리스트(Doubly Linked List)는 다음 노드 포인터(next)와 이전 노트 포인터(prev)를 가지고 있어 <strong>양방향 탐색</strong>이 가능하다.</p>
+<p>다시 말해, 노드와 노드가 앞 뒤로 서로 연결되어 있다.</p>
+<p><img src="/img/20200720-02.jpg" alt="LinkedList"></p>
+<h2 id="linkedlist-선언">LinkedList 선언</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">LinkedList list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">();</span><span style="color:#75715e">//타입 미설정
+</span><span style="color:#75715e"></span>LinkedList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> num1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;();</span><span style="color:#75715e">//타입 설정 - int 타입만 사용 가능
+</span><span style="color:#75715e"></span>LinkedList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> num2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">&lt;&gt;();</span><span style="color:#75715e">//new에서 타입 파라미터 생략
+</span><span style="color:#75715e"></span>LinkedList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> num3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;(</span>Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 2<span style="color:#f92672">));</span> <span style="color:#75715e">//생성시 값 추가
+</span></code></pre></div><p>LinkedList와 <a href="https://kimkonpig.github.io/posts/arraylist/">ArrayList의 선언 방법</a>은 동일하다.</p>
+<p>한가지 다른 점은 LinkedList는 선언 시 크기를 미리 설정할 수 없다.</p>
+<p>JDK 5.0 이후 부터 타입 안정성을 위해 제너릭스(Generics) 개념이 도입되었다.</p>
+<p>위 예시의 num1, num2처럼 LinkedList에 데이터타입을 명시하여 사용하면</p>
+<p>잘못된 타입으로 캐스팅하는 오류를 예방할 수 있다.</p>
+<p>제너릭스 사용해서 선언 시 데이터타입은 원시타입이 아닌 참조타입(wrapper class)를 사용해야 한다.</p>
+<h2 id="linkedlist--주요-메소드">LinkedList  주요 메소드</h2>
+<p>LinkedList 사용 시 자주 쓰는 메소드 몇 가지만 소개한다. 다른 메소드를 확인하고 싶다면 <a href="https://www.javatpoint.com/java-linkedlist">여기</a>로.</p>
+<table>
+<thead>
+<tr>
+<th>메소드</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean add(E e) / void add(int index, E element)</td>
+<td>LinkedList 맨 뒤에 value를 추가하거나, 지정한 index에 value를 추가한다.</td>
+</tr>
+<tr>
+<td>void addFirst(E e) / void addLast(E e)</td>
+<td>LinkedList 맨 앞 또는 맨 뒤에 데이터를 추가한다.</td>
+</tr>
+<tr>
+<td>E get(int index) / E getFirst() / E getLast()</td>
+<td>해당 index 또는 맨 앞, 맨 뒤의 value를 반환한다.</td>
+</tr>
+<tr>
+<td>int indexOf(Object o) / int lastIndexOf(Object o)</td>
+<td>찾고자 하는 값(o)이 LinkedList 맨 앞 또는 맨 뒤에 있으면 해당 index를 반환한다. 없으면 -1 반환.</td>
+</tr>
+<tr>
+<td>boolean offer(E e)</td>
+<td>LinkedList 마지막에 요소를 추가한다.</td>
+</tr>
+<tr>
+<td>E peek()</td>
+<td>LinkedList 첫번째 요소를 반환한다. (제거X)</td>
+</tr>
+<tr>
+<td>E poll()</td>
+<td>LinkedList 첫번째 요소를 반환 후 제거한다.</td>
+</tr>
+<tr>
+<td>int size()</td>
+<td>LinkedList의 크기를 반환한다.</td>
+</tr>
+<tr>
+<td>E remove() / E remove(int index)</td>
+<td>LinkedList의 첫번째 요소 또는 해당 index의 요소를 제거한다.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkedlist-활용-예">LinkedList 활용 예</h2>
+<ul>
+<li>첫번째 : LinkedList Iterator를 사용한 출력</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.*<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String args<span style="color:#f92672">[])</span> <span style="color:#f92672">{</span>
+      LinkedList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
+      
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Dokdo&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;is&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Korean&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;territory&#34;</span><span style="color:#f92672">);</span>
+      
+      Iterator<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> itr <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">iterator</span><span style="color:#f92672">();</span>
+      <span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>itr<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">()){</span>
+          System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>itr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">());</span>
+      <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p><a href="https://www.jdoodle.com/embed/v0/2bjo">코드 결과 확인</a></p>
+<ul>
+<li>두번째 : add와 remove 메소드 사용, Object 출력</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.*<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String args<span style="color:#f92672">[])</span> <span style="color:#f92672">{</span>
+      LinkedList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
+      
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Dokdo&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;is&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Korean&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;territory&#34;</span><span style="color:#f92672">);</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Before add() : &#34;</span> <span style="color:#f92672">+</span> list<span style="color:#f92672">);</span>
+      
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;remover&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;clearly&#34;</span><span style="color:#f92672">);</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;After add() : &#34;</span> <span style="color:#f92672">+</span> list<span style="color:#f92672">);</span>
+      
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">removeLast</span><span style="color:#f92672">();</span>
+      System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;After removeLast() : &#34;</span> <span style="color:#f92672">+</span> list<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p><a href="https://www.jdoodle.com/embed/v0/2bjs">코드 결과 확인</a></p>
+<ul>
+<li>
+<p>세번째 : descendingIterator 메소드 사용하여 마지막 입력값부터 출력</p>
+</li>
+<li>
+<p>Collections 클래스의 sort 메소드 사용해서 동일하게 출력 가능</p>
+<ul>
+<li>Collections.sort(list, Comparator.reverseOrder());</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.*<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String args<span style="color:#f92672">[])</span> <span style="color:#f92672">{</span>
+      LinkedList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;();</span>
+      
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Dokdo&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;is&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Korean&#34;</span><span style="color:#f92672">);</span>
+      list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;territory&#34;</span><span style="color:#f92672">);</span>
+      
+      Iterator itr <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">descendingIterator</span><span style="color:#f92672">();</span>
+      <span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>itr<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">()){</span>
+          System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>itr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">());</span>
+      <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p><a href="https://www.jdoodle.com/embed/v0/2bjt">코드 결과 확인</a></p>
+
+    </div>
+    <div class="post-footer">
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kimkonpig" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

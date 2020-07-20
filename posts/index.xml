@@ -6,10 +6,27 @@
     <description>Recent content in Posts on KONPIG BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java LinkedList</title>
+      <link>/posts/linkedlist/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/linkedlist/</guid>
+      <description>Java LinkedList 클래스는 요소를 조작하기 위해 이중 연결 리스트를 사용한다.
+AbstractSequentialList 클래스를 상속받으며 List와 Deque 인터페이스를 구현한다.
+참고
+주요 특징   LinkedList 클래스는 중복 요소를 가질 수 있다.
+  LinkedList 클래스는 삽입 순서를 유지한다.
+  LinkedList 클래스는 비동기적(non-synchronized)이다.
+  LinkedList 클래스는 삽입/제거 시 요소의 이동이 없기 때문에 비교적 빠르다.
+  LinkedList 클래스는 list, stack, queue로 사용할 수 있다.
+  이중 연결 리스트(Doubly Linked List) 일반적인 연결 리스트(Linked List)의 노드들은 다음 노드를 가리키는 포인터(next)만 가지고 있어 단방향으로만 탐색이 가능하다.</description>
+    </item>
     
     <item>
       <title>Java ArrayList</title>
