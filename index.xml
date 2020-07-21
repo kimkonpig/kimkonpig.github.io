@@ -6,10 +6,23 @@
     <description>Recent content on KONPIG BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>/posts/elasticsearch/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/elasticsearch/</guid>
+      <description>Elasticsearch란?   Apache Lucene(아파치 루씬) 기반의 Java 오픈소스 분산 검색 엔진
+ 루씬 : Java 기반 정보 검색 라이브러리 오픈소스 SW    방대한 양의 데이터를 신속하게, 거의 실시간(NRT; Near Real Time)으로 저장, 검색, 분석할 수 있다.
+  ELK 스택 Elasticsearch는 검색을 위해 단독으로 사용되기도 하며,
+ELK(Elasticsearch / Logstatsh / Kibana) 스택(연동 솔루션)으로도 사용한다.
+  Logstash : 다양한 소스(DB, csv 파일 등)의 로그 또는 트랜잭션 데이터를 수집, 집계, 파싱하여 Elasticsearch로 전달</description>
+    </item>
     
     <item>
       <title>Java LinkedList</title>
