@@ -6,10 +6,37 @@
     <description>Recent content in Tags on KONPIG BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>coding</title>
+      <link>/tags/coding/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>practice</title>
+      <link>/tags/practice/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/practice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programmers</title>
+      <link>/tags/programmers/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/programmers/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>elasticsearch</title>

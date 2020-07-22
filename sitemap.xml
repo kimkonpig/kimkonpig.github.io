@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/coding/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/practice/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/programmers/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/programmers-12899-124-%E1%84%82%E1%85%A1%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B4-%E1%84%89%E1%85%AE%E1%86%BA%E1%84%8C%E1%85%A1/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/elasticsearch/</loc>
     <lastmod>2020-07-21T00:00:00+00:00</lastmod>
   </url>
@@ -14,21 +49,6 @@
   
   <url>
     <loc>/tags/elk/</loc>
-    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-07-21T00:00:00+00:00</lastmod>
   </url>
   
