@@ -6,10 +6,37 @@
     <description>Recent content in Tags on KONPIG BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2020 18:55:31 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>INFLEARN</title>
+      <link>/tags/inflearn/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/inflearn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaPersistence</title>
+      <link>/tags/javapersistence/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/javapersistence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JPA</title>
+      <link>/tags/jpa/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/jpa/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>coding</title>

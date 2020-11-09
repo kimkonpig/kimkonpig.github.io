@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>JPA Intro // KONPIG BLOG</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.73.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Kim Youlim" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.0a0ed68d1905d89b9b4a6505b55ff021db9334619ab6718a424276bf76524825.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JPA Intro"/>
+<meta name="twitter:description" content="JPA Intro Java Persistence API
+순수 JDBC API &#43; SQL 직접 입력
+-&gt; MyBatis, JDBCTemplate
+-&gt; JPA (SQL 입력 불필요)
+목표 - 객체와 테이블 설계 매핑
+ 객체와 테이블을 제대로 설계하고 매핑하는 방법 기본 키와 외래 키 매핑 1:N, N:1, 1:1, N:M 매핑 실무 노하우 &#43; 성능까지 고려 어떠한 복잡한 시스템도 JPA로 설계 가능  목표 - JPA 내부 동작 방식 이해
+ JPA의 내부 동작 방식을 이해하지 못하고 사용 JPA 내부 동작 방식을 그림과 코드로 자세히 설명 JPA가 어떤 SQL을 만들어 내는지 이해 JPA가 언제 SQL을 실행하는지 이해  JPA 기본편 학습 방법"/>
+
+    <meta property="og:title" content="JPA Intro" />
+<meta property="og:description" content="JPA Intro Java Persistence API
+순수 JDBC API &#43; SQL 직접 입력
+-&gt; MyBatis, JDBCTemplate
+-&gt; JPA (SQL 입력 불필요)
+목표 - 객체와 테이블 설계 매핑
+ 객체와 테이블을 제대로 설계하고 매핑하는 방법 기본 키와 외래 키 매핑 1:N, N:1, 1:1, N:M 매핑 실무 노하우 &#43; 성능까지 고려 어떠한 복잡한 시스템도 JPA로 설계 가능  목표 - JPA 내부 동작 방식 이해
+ JPA의 내부 동작 방식을 이해하지 못하고 사용 JPA 내부 동작 방식을 그림과 코드로 자세히 설명 JPA가 어떤 SQL을 만들어 내는지 이해 JPA가 언제 SQL을 실행하는지 이해  JPA 기본편 학습 방법" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/jpa-intro/" />
+<meta property="article:published_time" content="2020-11-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-09T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Kim Youlim" /></a>
+      <h1>KONPIG BLOG</h1>
+      <p>Welcome</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/kimkonpig" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">JPA Intro</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          November 9, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="/tags/jpa/">JPA</a><a class="tag" href="/tags/inflearn/">INFLEARN</a><a class="tag" href="/tags/javapersistence/">JavaPersistence</a></div></div>
+    </header>
+    <div class="post-content">
+      <h1 id="jpa-intro">JPA Intro</h1>
+<p>Java Persistence API</p>
+<p>순수 JDBC API + SQL 직접 입력</p>
+<p>-&gt; MyBatis, JDBCTemplate</p>
+<p>-&gt; JPA (SQL 입력 불필요)</p>
+<p>목표 - 객체와 테이블 설계 매핑</p>
+<ul>
+<li>객체와 테이블을 제대로 설계하고 매핑하는 방법</li>
+<li>기본 키와 외래 키 매핑</li>
+<li>1:N, N:1, 1:1, N:M 매핑</li>
+<li>실무 노하우 + 성능까지 고려</li>
+<li>어떠한 복잡한 시스템도 JPA로 설계 가능</li>
+</ul>
+<p>목표 - JPA 내부 동작 방식 이해</p>
+<ul>
+<li>JPA의 내부 동작 방식을 이해하지 못하고 사용</li>
+<li>JPA 내부 동작 방식을 그림과 코드로 자세히 설명</li>
+<li>JPA가 어떤 SQL을 만들어 내는지 이해</li>
+<li>JPA가 언제 SQL을 실행하는지 이해</li>
+</ul>
+<p>JPA 기본편 학습 방법</p>
+<ul>
+<li>JPA는 표준 스펙만 500페이지로 방대함</li>
+<li>혼자서 공부하기는 쉽지 않음</li>
+<li>강의는 이론 + 라이브 코딩</li>
+<li>6단계의 실전 예제</li>
+<li>강의를 메인으로 하고, 책은 참고서로 추천</li>
+<li>총 16시간: 하루 1시간 반, 2주 완성</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kimkonpig" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
