@@ -6,10 +6,24 @@
     <description>Recent content on KONPIG BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why JPA</title>
+      <link>/posts/jpa-01/</link>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/jpa-01/</guid>
+      <description>JPA 목차
+ SQL 중심적인 개발의 문제점 JPA 소개  애플리케이션 - 객체지향언어
+데이터베이스 세계의 헤게모니 - RDBMS
+SQL 중심적인 개발의 문제점
+ 무한 반복, 지루한 코드(CRUD&amp;hellip;) RDBMS는 SQL에 의존적인 개발을 피하기 어렵다.  패러다임의 불일치 : 객체vsRDBMS
+ 객체 -&amp;gt; SQL변환 -&amp;gt; RDBMS SQL 매핑 작업은 누가 해? 개발자가 해.. 객체와 관계형 데이터베이스의 차이  상속 연관관계 데이터타입 데이터 식별 방법    객체를 자바 컬렉션에 저장하듯이 DB에 저장할 수는 없을까?</description>
+    </item>
     
     <item>
       <title>JPA Intro</title>
