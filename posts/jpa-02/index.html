@@ -161,32 +161,36 @@
 <li>
 <p>JPA와 상속</p>
 <ul>
-<li>저장 시
-개발자가 할일 : jpa.persist(album);
-나머지는 JPA가 처리 : INSERT INTO ITEM &hellip; / INSERT INTO ALBUM &hellip;</li>
-<li>조회 시
-개발자가 할일 : Album album = jpa.find(Album.class, albumId);
-나머지는 JPA가 처리 : SELECT I.* , A.* FROM ITEM I JOIN ALBUM A ON I.ITEM_ID = A.ITEM_ID</li>
+<li>
+<p>저장 시
+개발자가 할일 : jpa.persist(album);<br>
+나머지는 JPA가 처리 : INSERT INTO ITEM &hellip; / INSERT INTO ALBUM &hellip;</p>
+</li>
+<li>
+<p>조회 시
+개발자가 할일 : Album album = jpa.find(Album.class, albumId);<br>
+나머지는 JPA가 처리 : SELECT I.* , A.* FROM ITEM I JOIN ALBUM A ON I.ITEM_ID = A.ITEM_ID</p>
+</li>
 </ul>
 </li>
 <li>
 <p>JPA와 연관관계, 객체 그래프 탐색 -&gt; 신뢰할 수 있는 엔티티, 계층</p>
 <ul>
-<li>연관관계 저장
-member.setTeam(team);
+<li>연관관계 저장<br>
+member.setTeam(team);<br>
 jpa.persist(member);</li>
-<li>객체 그래프 탐색
-Member member = jpa.find(Member.class, memberId);
+<li>객체 그래프 탐색<br>
+Member member = jpa.find(Member.class, memberId);<br>
 Team team = member.getTeam();</li>
 </ul>
 </li>
 <li>
 <p>JPA와 비교하기</p>
 <ul>
-<li>동일한 트랜잭션에서 조회한 엔티티는 같음을 보장
-String memberId = &ldquo;100&rdquo;;
-Member member1 = jpa.find(Member.class, memberId); //SQL
-Member member2 = jpa.find(Member.class, memberId); //캐시(SQL 한번만 실행, 약간의 성능 향상)
+<li>동일한 트랜잭션에서 조회한 엔티티는 같음을 보장<br>
+String memberId = &ldquo;100&rdquo;;<br>
+Member member1 = jpa.find(Member.class, memberId); //SQL<br>
+Member member2 = jpa.find(Member.class, memberId); //캐시(SQL 한번만 실행, 약간의 성능 향상)<br>
 member1 == member2; //true</li>
 </ul>
 </li>
